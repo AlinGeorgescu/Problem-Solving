@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from typing import List
 
 def main(nums: List[int]) -> List[int]:
