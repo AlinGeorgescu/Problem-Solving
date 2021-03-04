@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-from math import floor, log
-
 def main() -> None:
     nums = input("Insert list: ")
     nums = list(map(int, nums.split(', ')))

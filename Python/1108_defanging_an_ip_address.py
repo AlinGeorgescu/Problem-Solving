@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-from math import floor, log
-
 def main() -> None:
     address = input("Enter an IP address: ")
     address = address.split(".")

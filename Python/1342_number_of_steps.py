@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-from math import floor, log
-
 def main() -> None:
     steps = 0
     x = int(input("Enter a number: "))
