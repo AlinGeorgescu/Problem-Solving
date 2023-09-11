@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         res, stack = [], [(root, False)]
 
         while stack:
@@ -15,8 +15,8 @@ class Solution:
                 if visited:
                     res.append(node.val)
                 else:
-                    stack.append((node.right, False))
                     stack.append((node, True))
+                    stack.append((node.right, False))
                     stack.append((node.left, False))
 
         return res
